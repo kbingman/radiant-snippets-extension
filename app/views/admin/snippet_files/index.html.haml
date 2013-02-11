@@ -11,7 +11,7 @@
     %tbody
       - if @snippet_files.any?
         - @snippet_files.each do |snippet|
-          %tr[snippet]
+          %tr
             - render_region :tbody, :locals => {:snippet => snippet} do |tbody|
               - tbody.title_cell do
                 %td.name
